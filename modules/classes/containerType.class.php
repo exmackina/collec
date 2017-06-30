@@ -49,6 +49,12 @@ class ContainerType extends ObjetBDD {
 				),
 				"label_id" => array (
 						"type" => 1
+				),
+				"container_type_nb_column" => array (
+						"type" => 1
+				),
+				"container_type_nb_row" => array (
+						"type" => 1
 				)
 		);
 		parent::__construct ( $bdd, $param );

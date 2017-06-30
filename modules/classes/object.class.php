@@ -106,7 +106,7 @@ class Object extends ObjetBDD {
 		 * Verification que la liste ne soit pas vide
 		 */
 		if (count ( $list ) > 0) {
-			$data = $this->getForList ( $list, "uid" );
+			$data = $this->getForListDetail( $list);
 			/**
 			 * Rajout des identifiants complementaires
 			 */
@@ -186,6 +186,49 @@ class Object extends ObjetBDD {
 		left outer join container_type using (container_type_id)
 		left outer join last_movement using (uid)
 		left outer join movement_type using (movement_type_id)
+		where uid in ($uids)
+		";
+		if (strlen ( $order ) > 0) {
+			$sql = "select * from (" . $sql . ") as a";
+			$order = " order by $order";
+		}
+		return $this->getListeParam ( $sql . $order );
+	}
+	/**
+	 * Recupere la liste des objets détaillée pour une importation 
+	 *
+	 * @param array $list        	
+	 * @return tableau
+	 */
+	function getForListDetail(array $list, $order = "") {
+		/*
+		 * Verification que les uid sont numeriques
+		 * preparation de la clause where
+		 */
+		$comma = false;
+		$uids = "";
+		foreach ( $list as $value ) {
+			if (is_numeric ( $value ) && $value > 0) {
+				$comma == true ? $uids .= "," : $comma = true;
+				$uids .= $value;
+			}
+		}
+		$sql = "select identifier as sample_identifier,  project_id, project_name, sample_type_id, sample_type_name,
+		object_status_id as sample_status_id, object_status_name as sample_status,
+		sampling_place_name as sampling_place,
+		wgs84_x, wgs84_y,
+		sample_date,
+		multiple_value as sample_multiple_value,
+		data as sample_metadata_json,
+		container_id as container_parent_id
+		from object
+		join object_status using (object_status_id)
+		join sample using (uid)
+		join sample_metadata using (sample_metadata_id)	
+		join project using (project_id)
+		join sample_type using (sample_type_id)
+		left outer join sampling_place using (sampling_place_id)
+		left outer join last_movement using (uid)
 		where uid in ($uids)
 		";
 		if (strlen ( $order ) > 0) {

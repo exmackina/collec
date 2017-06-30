@@ -21,6 +21,13 @@ var type_init = {if $data.container_type_id > 0}{$data.container_type_id}{else}0
 			        options += '>' + data[i].container_type_name + '</option>';
 			      };
 			$("#container_type_id").html(options);
+			if(data.container_type_nb_row>0 && data.container_type_nb_column>0){
+					$("#storage_location").attr("placeholder","(nom ligne, nom colonne)");
+					$("#storage_location_label").text("Emplacement dans le conteneur (en ligne et colonne) :");
+				}else{
+					$("#storage_location").attr("placeholder","");
+					$("#storage_location_label").text("Emplacement dans le conteneur :");
+				}
 			}
 		} ) ;
 	}
@@ -45,6 +52,13 @@ var type_init = {if $data.container_type_id > 0}{$data.container_type_id}{else}0
 			    options += '>' + data[i].uid + " " + data[i].identifier + " ("+data[i].object_status_name + ")</option>";
 			}
 			$("#containers").html(options);
+			if(data.container_type_nb_row>0 && data.container_type_nb_column>0){
+					$("#storage_location").attr("placeholder","(nom ligne, nom colonne)");
+					$("#storage_location_label").text("Emplacement dans le conteneur (en ligne et colonne) :");
+				}else{
+					$("#storage_location").attr("placeholder","");
+					$("#storage_location_label").text("Emplacement dans le conteneur :");
+				}
 			}
 			});
 	}
@@ -91,6 +105,13 @@ var type_init = {if $data.container_type_id > 0}{$data.container_type_id}{else}0
 				var options = '<option value="' + data.container_id + '" selected>' + data.uid + " " + data.identifier + " ("+data.object_status_name + ")</option>";
 				$("#container_id").val(data.container_id);
 				$("#containers").html(options);
+				if(data.container_type_nb_row>0 && data.container_type_nb_column>0){
+					$("#storage_location").attr("placeholder","(nom ligne, nom colonne)");
+					$("#storage_location_label").text("Emplacement dans le conteneur (en ligne et colonne) :");
+				}else{
+					$("#storage_location").attr("placeholder","");
+					$("#storage_location_label").text("Emplacement dans le conteneur :");
+				}
 				}
 				});
 
@@ -166,12 +187,14 @@ Retour au détail
 </div>
 </div>
 {if $data.movement_type_id == 1}
+
 <div class="form-group">
-<label for="storage_location" class="control-label col-md-4">Emplacement dans le conteneur :</label>
+<label for="storage_location" id="storage_location_label" name="storage_location_label" class="control-label col-md-4">Emplacement dans le conteneur :</label>
 <div class="col-md-8">
-<input id="storage_location" name="storage_location" value="{$data.storage_location}" type="text" class="form-control">
+<input id="storage_location" name="storage_location" value="{$data.storage_location}" type="text" class="form-control" placeholder="">
 </div>
 </div>
+
 {/if}
 {if $data.movement_type_id == 2}
 			<div class="form-group">

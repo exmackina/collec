@@ -9,6 +9,7 @@ require_once 'modules/classes/object.class.php';
 class Container extends ObjetBDD {
 	private $sql = "select c.container_id, uid, identifier, wgs84_x, wgs84_y, 
 					container_type_id, container_type_name,
+					container_type_nb_row, container_type_nb_column,
 					container_family_id, container_family_name, object_status_id, object_status_name,
 					storage_product, clp_classification, storage_condition_name,
 					document_id, identifiers,

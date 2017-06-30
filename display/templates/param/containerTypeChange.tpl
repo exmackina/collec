@@ -64,6 +64,20 @@
 </div>
 
 <div class="form-group">
+<label for="nbRaw" class="control-label col-md-4">Nombre de lignes :</label>
+<div class="col-md-8">
+<input id="nbRaw" name="container_type_nb_raw" value="{$data.container_type_nb_raw}" type="number" class="form-control">
+</div>
+</div>
+
+<div class="form-group">
+<label for="nbColumn" class="control-label col-md-4">Nombre de colonnes :</label>
+<div class="col-md-8">
+<input id="nbColumn" name="container_type_nb_column" value="{$data.container_type_nb_column}" type="number" class="form-control">
+</div>
+</div>
+
+<div class="form-group">
 <label for="labelId" class="control-label col-md-4">Modèle d'étiquette :</label>
 <div class="col-md-8">
 <select id="labelId" name="label_id" class="form-control">

@@ -49,3 +49,9 @@ ALTER TABLE label ADD COLUMN operation_id integer,
 ADD constraint label_operation_fk foreign key (operation_id)
 REFERENCES operation (operation_id) match simple
 ON update no action ON delete no action;
+
+ALTER Table container_type
+add column container_type_nb_column integer,
+add column container_type_nb_row integer;
+COMMENT ON COLUMN "container_type"."container_type_nb_column" IS 'Nombre de colonnes du conteneur';
+COMMENT ON COLUMN "container_type"."container_type_nb_row" IS 'Nombre de lignes du conteneur';
