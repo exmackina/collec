@@ -25,8 +25,6 @@ Code &  Description \\
 \hline
 404 & Not found : la ressource demandée est introuvable\\
 \hline
-408 & RequestTimeOut : la requête n'a pas abouti dans le temps imparti, ou elle a été annulée par le client\\
-\hline
 500 & InternalError : une erreur d'exécution ne permet pas de retourner le résultat de la requête\\
 \hline
 503 & ServiceUnavailable : le service est temporairement indisponible\\
@@ -60,6 +58,8 @@ valfr & varchar & Texte affichable dans un masque de recherche, en français\\
 valen & varchar & Texte affichable dans un masque de recherche, en anglais\\
 \hline \endhead
 \end{longtable}
+
+Les dates/heures doivent être formatées selon le format étendu de l'ISO-8601, avec le fuseau horaire, par exemple :  1997-07-16T19:20:30+01:00 (format normalisé \textit{yyyy-mm-ddThh:mm:ssZ} ou \textit{yyyy-mm-ddThh:mm:sszzzzzz}) .
 
 Exemple :
 \begin{lstlisting}
@@ -176,9 +176,9 @@ ids & collection & liste de tous les identifiants secondaires, selon la forme id
 \hline
 project & varchar & nom du projet ou de la sous-collection correspondante \\
 \hline
-createdate & yyyy-mm-dd hh:mm:ss & date de création de l'échantillon dans la base de données d'origine \\
+createdate & yyyy-mm-ddThh:mm:ssZ & date de création de l'échantillon dans la base de données d'origine \\
 \hline
-collectdate & yyyy-mm-dd hh:mm:ss & date de collecte ou de génération de l'échantillon\\
+collectdate & yyyy-mm-ddThh:mm:ssZ & date de collecte ou de génération de l'échantillon\\
 \hline
 metadata & objet json & données \og métier\fg{} rattachées à l'échantillon \\
 \hline
