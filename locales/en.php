@@ -6,12 +6,12 @@ $LANG["menu"][0] = "Manage";
 $LANG["menu"][1] = "Managing operations";
 $LANG["menu"][2] = "Account List";
 $LANG["menu"][3] = "List of logins - Database identification";
-$LANG["menu"][4] = "Administer";
+$LANG["menu"][4] = "Administration";
 $LANG["menu"][5] = "Administer this program";
-$LANG["menu"][6] = "Disconnect";
+$LANG["menu"][6] = "Log out";
 $LANG["menu"][7] = "Disconnect from this program";
 $LANG["menu"][8] = "About";
-$LANG["menu"][9] = "About prototypePHP";
+$LANG["menu"][9] = "About Collec";
 $LANG["menu"][10] = "Help";
 $LANG["menu"][11] = "Any help...";
 $LANG["menu"][12] = "Rights management";
@@ -45,6 +45,9 @@ $LANG["menu"][43] = "Add a search modul";
 $LANG["menu"]["phpinfo"] = "PHP info";
 $LANG["menu"]["phpinfotitle"] = "PHP configuration";
 
+$LANG["menu"]["pwchange"] = "Change password"; //"Modifier le mot de passe
+$LANG["menu"]["pwchangetitle"] = "Change your password (local identification only)"; // Modifiez votre mot de passe (identification locale uniquement)
+
 /*
  * Gestion des droits nouvelle formule
  */
@@ -57,8 +60,77 @@ $LANG["menu"]["grouplistetitle"] = "Logins groups and logins rattached";
 
 $LANG["menu"]["example1"] = "Example";
 $LANG["menu"]["example2"] = "It's an example !";
-$LANG["menu"]["connexionvalue"] = "Connexion";
+$LANG["menu"]["connexionvalue"] = "Log in";
 $LANG["menu"]['connexiontitle'] = "Connect to the application";
+
+/*
+ * Entrees du menu pour l'application
+ */
+$LANG["menu"][50] = "Settings"; //Paramètres
+$LANG["menu"][51] = "Settings";  //Paramètres
+$LANG["menu"][52] = "Types of event"; //Type événement
+$LANG["menu"][53] = "Types of event"; //Types d'événement
+$LANG["menu"][54] = "Families of containers";  // Familles de conteneurs
+$LANG["menu"][55] = "Families of containers (real estate, furniture...)";  // Familles de conteneurs (armoires, éprouvettes...)
+$LANG["menu"][56] = "Storage conditions";  // Conditions de stockage
+$LANG["menu"][57] = "List of storage conditions (cold, wet...)";  // Liste des conditions de stockage
+$LANG["menu"][58] = "Types of containers";  // Types de conteneurs
+$LANG["menu"][59] = "List of container types (room, test tube...)";  // Liste des types de conteneurs
+$LANG["menu"][60] = "Containers";  // Conteneurs
+$LANG["menu"][61] = "List of containers";  // Liste des conteneurs
+$LANG["menu"][62] = "Object statuses";  // Statuts des objets
+$LANG["menu"][63] = "List of possible statuses for objects (normal, destroyed...)";  // Liste des statuts possibles pour les objets
+$LANG["menu"][64] = "Projects";  // Projets
+$LANG["menu"][65] = "List of projects";  // Liste des projets
+$LANG["menu"][66] = "Types of samples";  // Type d'échantillons
+$LANG["menu"][67] = "List of sample types (water sample...)";  // Liste des types d'échantillons gérés
+$LANG["menu"][68] = "Samples";  // Échantillons
+$LANG["menu"][69] = "List of samples";  // Liste des échantillons
+$LANG["menu"][70] = "Movements";  // Mouvements
+$LANG["menu"][71] = "Creating movements in the stock";  // Création de mouvements dans le stock
+$LANG["menu"][72] = "Enter a sample";  // Entrer un échantillon
+$LANG["menu"][73] = "Quick entry of a sample into the stock";  // Entrée rapide d'un échantillon dans le stock
+$LANG["menu"][74] = "Take out a sample";  // Sortir un échantillon
+$LANG["menu"][75] = "Quick exit of a sample of the stock";  // Sortie rapide d'un échantillon du stock
+$LANG["menu"][76] = "Objects";  // Objets
+$LANG["menu"][77] = "Operations on samples or containers";  // Opérations sur les échantillons ou les containers
+$LANG["menu"][78] = "Bulk import";  // Import de masse
+$LANG["menu"][79] = "Import of several samples or containers";  // Import de plusieurs échantillons ou containers
+$LANG["menu"][80] = "Labels";  // Étiquettes
+$LANG["menu"][81] = "Label templates";  // Modèles d'étiquettes
+$LANG["menu"][82] = "Protocols";  // Protocoles
+$LANG["menu"][83] = "List of protocols";  // Liste des protocoles
+$LANG["menu"][85] = "Operations";  // Opérations
+$LANG["menu"][86] = "List of operations attached to a protocol";  // Liste des opérations rattachées à un protocole
+$LANG["menu"][87] = "Subsampling";  // Sous-échantillonnage
+$LANG["menu"][88] = "Types of subsampling";  // Types de sous-échantillonnage
+$LANG["menu"][89] = "Types of identifiers";  // Types d'identifiants
+$LANG["menu"][90] = "List of identifier types linkable to an object";  // Liste des types d'identifiants rattachables à un objet TODO
+$LANG["menu"][91] = "Reasons for destocking";  // Motifs de déstockage
+$LANG["menu"][92] = "Reasons for stock exit";  // Motifs de sortie du stock
+$LANG["menu"][93] = "Batch entry / exit";  // Entrée/sortie par lots
+$LANG["menu"][94] = "Entry / Exit by multiple scan of QRCODE";  // Entrée / sortie par scan multiple de QRCODE
+$LANG["menu"][95] = "Sampling locations";  // Lieux de prélèvement 
+$LANG["menu"][96] = "List of sampling locations";  // Liste des lieux de prélèvement des échantillons
+$LANG["menu"][97] = "Printers";  // Imprimantes
+$LANG["menu"][98] = "List of printers";  // Liste des imprimantes
+$LANG["menu"][99] = "Metadata";  // Métadonnées
+$LANG["menu"][100] = "Metadata templates";  // Modèles de métadonnées
+$LANG["menu"][101] = "Import of external samples";  // Import d'échantillons externes
+$LANG["menu"][102] = "Import a batch of samples from an external base";  // Import d'un lot d'échantillons provenant d'une base externe
+$LANG["menu"][103] = "Application settings";  // Paramètres de l'application
+$LANG["menu"][104] = "List of settings of the application";  // Liste des paramètres pérennes de l'application
+$LANG["menu"][105] = "List of movements";  // Liste des mouvements
+$LANG["menu"][106] = "Search for movements over a period of time";  // Recherche des mouvements sur une période donnée
+$LANG["menu"][107] = "Glossary";  // Lexique
+$LANG["menu"][108] = "Glossary of terms used in this software";  // Lexique des termes utilisés dans le logiciel
+$LANG["menu"][109] = "Small device movements";  // Mouvements petit terminal
+$LANG["menu"][110] = "Reading objects and generating movements on small devices";  // Lecture d'objets et génération de mouvements sur petits terminaux
+$LANG["menu"][111] = "";  // ""
+$LANG["menu"][112] = "";  // ""
+
+$LANG["menu"]["helpTitle"] = "Help";
+
 
 $LANG["message"][0] = "Welcome";
 $LANG["message"][1] = "prototypephp - Title";
