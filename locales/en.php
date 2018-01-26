@@ -8,7 +8,7 @@ $LANG["menu"][2] = "Account List";
 $LANG["menu"][3] = "List of logins - Database identification";
 $LANG["menu"][4] = "Administration";
 $LANG["menu"][5] = "Administer this program";
-$LANG["menu"][6] = "Log out";
+$LANG["menu"][6] = "Sign out";
 $LANG["menu"][7] = "Disconnect from this program";
 $LANG["menu"][8] = "About";
 $LANG["menu"][9] = "About Collec";
@@ -60,7 +60,7 @@ $LANG["menu"]["grouplistetitle"] = "Logins groups and logins rattached";
 
 $LANG["menu"]["example1"] = "Example";
 $LANG["menu"]["example2"] = "It's an example !";
-$LANG["menu"]["connexionvalue"] = "Log in";
+$LANG["menu"]["connexionvalue"] = "Sign in";
 $LANG["menu"]['connexiontitle'] = "Connect to the application";
 
 /*
