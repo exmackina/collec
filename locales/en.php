@@ -233,4 +233,28 @@ $LANG["ObjetBDDError"][5] = "Field content ";
 $LANG["ObjetBDDError"][6] = " don't match expected pattern. Pattern authorized : ";
 $LANG["ObjetBDDError"][7] = " is mandatory, but is empty.";
 
+
+$LANG["appli"]["Valider"] = "Validate";
+$LANG["appli"]["Supprimer"] = "Delete";
+$LANG["appli"]["Donnée obligatoire"] = "Mandatory";
+$LANG["appli"]["Nouveau..."] = "New ...";
+$LANG["appli"]["Retour à la liste"] = "Back to the list";
+$LANG["appli"]["Choisissez..."]="Select ...";
+$LANG["appli"]["Familles de conteneurs"] = "Families of containers"; 
+$LANG["appli"]["Nom"] = "Name";
+$LANG["appli"]["Types de containers facilement déplaçables ?"] = "Types of containers easily movable?";
+$LANG["appli"]["Modification d'un type de container"] = "Modification of a container type";
+$LANG["appli"]["Nom :"] = "Name:";
+$LANG["appli"]["Famille :"]="Family:";
+$LANG["appli"]["Description :"]="Description:";
+$LANG["appli"]["Nb de lignes :"]="Number of lines:";
+$LANG["appli"]["Nb de colonnes :"]="Number of columns:";
+$LANG["appli"]["Position de la première ligne :"]="Position of the first line:";
+$LANG["appli"]["En haut"]="Top";
+$LANG["appli"]["En bas"]="Bottom";
+$LANG["appli"]["Condition de stockage :"]="Storage condition:";
+$LANG["appli"]["Produit utilisé :"]="Product used:";
+$LANG["appli"]["Code de risque CLP :"]="CLP risk code:";
+$LANG["appli"]["Modèle d'étiquette :"]="Label template:";
+
 ?>

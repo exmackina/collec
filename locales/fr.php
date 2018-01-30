@@ -251,4 +251,28 @@ $LANG["appli"][5] = "Les contrôles de cohérence ne permettent pas d'enregister
 $LANG["appli"][6] = "Impossible d'enregistrer le mouvement";
 $LANG["appli"][7] = "Mouvement enregistré";
 
+
+$LANG["appli"]["Valider"] = "Valider";
+$LANG["appli"]["Supprimer"] = "Supprimer";
+$LANG["appli"]["Donnée obligatoire"] = "Donnée obligatoire";
+$LANG["appli"]["Nouveau..."] = "Nouveau...";
+$LANG["appli"]["Retour à la liste"] = "Retour à la liste";
+$LANG["appli"]["Choisissez..."] = "Choisissez...";
+$LANG["appli"]["Familles de conteneurs"] = "Familles de conteneurs";
+$LANG["appli"]["Nom"] = "Nom";
+$LANG["appli"]["Types de containers facilement déplaçables ?"] = "Types de conteneurs facilement déplaçables ?";
+$LANG["appli"]["Modification d'un type de container"] = "Modification d'un type de conteneur";
+$LANG["appli"]["Nom :"] = "Nom :";
+$LANG["appli"]["Famille :"]="Famille :";
+$LANG["appli"]["Description :"]="Description :";
+$LANG["appli"]["Nb de lignes :"]="Nb de lignes :";
+$LANG["appli"]["Nb de colonnes :"]="Nb de colonnes :";
+$LANG["appli"]["Position de la première ligne :"]="Position de la première ligne :";
+$LANG["appli"]["En haut"]="En haut";
+$LANG["appli"]["En bas"]="En bas";
+$LANG["appli"]["Condition de stockage :"]="Condition de stockage :";
+$LANG["appli"]["Produit utilisé :"]="Produit utilisé :";
+$LANG["appli"]["Code de risque CLP :"]="Code de risque CLP :";
+$LANG["appli"]["Modèle d'étiquette :"]="Modèle d'étiquette :";
+
 ?>

@@ -1,16 +1,16 @@
-<h2>Familles de containers</h2>
+<h2>{$LANG["appli"]["Familles_de_conteneurs"]}</h2>
 	<div class="row">
 	<div class="col-md-6">
 {if $droits.param == 1}
 <a href="index.php?module=containerFamilyChange&container_family_id=0">
-{$LANG["appli"][0]}
+{$LANG["appli"]["Nouveau..."]}
 </a>
 {/if}
 <table id="containerFamilyList" class="table table-bordered table-hover datatable " >
 <thead>
 <tr>
-<th>Nom</th>
-<th>Types de containers facilement déplaçables ?</th>
+<th>{$LANG["appli"]["Nom"]}</th>
+<th>{$LANG["appli"]["Types de containers facilement déplaçables ?"]}</th>
 </tr>
 </thead>
 <tbody>
